@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth 2.0 Login</title>
+</head>
+<body>
+    <h1>Welcome to OAuth 2.0 + OIDC App</h1>
+    <% if (!user) { %>
+        <a href="/auth/google">Sign Up / Login with Google</a>
+    <% } else { %>
+        <p>Welcome, <%= user.displayName %>!</p>
+        <a href="/dashboard">Go to Dashboard</a>
+        <a href="/logout">Logout</a>
+    <% } %>
+</body>
+</html>

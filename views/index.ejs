@@ -8,7 +8,7 @@
 <body>
     <h1>Welcome to OAuth 2.0 + OIDC App</h1>
     <% if (!user) { %>
-        <a href="/auth/google">Sign Up / Login with Google</a>
+        <a href="/auth/google">Login with Google</a>
     <% } else { %>
         <p>Welcome, <%= user.displayName %>!</p>
         <a href="/dashboard">Go to Dashboard</a>
